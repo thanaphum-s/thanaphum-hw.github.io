@@ -3,77 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | IT & Database Student</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | [ใส่ชื่อของคุณ]</title>
+    <!-- เชื่อมโยงกับไฟล์ style-v2.css -->
+    <link rel="stylesheet" href="style-v2.css">
 </head>
 <body>
 
-    <!-- 1. Header / Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
-            <h1>สวัสดีครับ/ค่ะ ฉันคือ <span class="highlight">[ใส่ชื่อ-นามสกุลของคุณ]</span></h1>
-            <p class="subtitle">นักศึกษาสาขาเทคโนโลยีสารสนเทศ (IT Student)</p>
-            <p class="tagline">Passionate about Database Systems, Web Development & Data Analytics</p>
-            <a href="#contact" class="btn">ติดต่อฉัน</a>
+    <!-- Top Navigation -->
+    <nav class="container">
+        <div class="logo">PORTFOLIO.</div>
+        <div class="nav-links">
+            <a href="#about">เกี่ยวกับฉัน</a>
+            <a href="#skills">ทักษะ</a>
+            <a href="#projects">ผลงาน</a>
+            <a href="#contact">ติดต่อ</a>
         </div>
+    </nav>
+
+    <!-- 1. Hero Section (มินิมอลเน้นรูปโปรไฟล์) -->
+    <header class="hero container">
+        <div class="profile-container">
+            <!-- 🔴 ใส่รูปโปรไฟล์ ชื่อไฟล์: images/profile.jpg -->
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+        </div>
+        <h1>สวัสดีครับ/ค่ะ ฉันคือ <span style="color: #2563eb;">[ใส่ชื่อ-นามสกุลของคุณ]</span></h1>
+        <p class="subtitle">IT & Database Development Student</p>
+        <p class="bio">มุ่งมั่นศึกษาด้านสถาปัตยกรรมฐานข้อมูล (SQL & NoSQL) การวิเคราะห์ข้อมูล และการพัฒนาเว็บแอปพลิเคชัน</p>
+        <a href="#contact" class="btn-contact">ติดต่อฉัน</a>
     </header>
 
     <!-- 2. About Me Section -->
-    <section id="about" class="container">
-        <h2>เกี่ยวกับฉัน (About Me)</h2>
+    <section id="about" class="container about-section">
+        <div class="section-head">
+            <h2>เกี่ยวกับฉัน</h2>
+            <p>Background & Learning Focus</p>
+        </div>
         <div class="about-grid">
-            <div class="about-card">
-                <h3>🎓 การศึกษา & สาขา</h3>
+            <div class="about-box">
+                <h3>🎓 การศึกษา</h3>
                 <p>นักศึกษาสาขาเทคโนโลยีสารสนเทศ คณะเทคโนโลยีสารสนเทศและนวัตกรรม</p>
             </div>
-            <div class="about-card">
-                <h3>💡 ความสนใจ & สไตล์การเรียนรู้</h3>
-                <p>สนใจการออกแบบสถาปัตยกรรมฐานข้อมูล (SQL & NoSQL), การพัฒนาเว็บแอปพลิเคชัน และชอบเรียนรู้ผ่านการลงมือทำจริง (Project-based Learning)</p>
+            <div class="about-box">
+                <h3>💡 สิ่งที่สนใจ</h3>
+                <p>การออกแบบและพัฒนาระบบฐานข้อมูลเชิงสัมพันธ์ (RDBMS) การจัดการข้อมูล JSON ใน NoSQL และการทำ Data Analytics</p>
             </div>
         </div>
     </section>
 
     <!-- 3. Skills Section -->
-    <section id="skills" class="container">
-        <h2>ทักษะความสามารถ (My Skills)</h2>
-        <div class="skills-tags">
-            <span class="skill-tag">SQL & SQLite</span>
-            <span class="skill-tag">NoSQL & JSON</span>
-            <span class="skill-tag">ER Diagram Design</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">HTML5 & CSS3</span>
-            <span class="skill-tag">Git & GitHub Pages</span>
+    <section id="skills" class="container skills-section">
+        <div class="section-head">
+            <h2>ทักษะความสามารถ</h2>
+            <p>Technical Skills & Tools</p>
+        </div>
+        <div class="skills-wrapper">
+            <span class="skill-badge">SQL & SQLite</span>
+            <span class="skill-badge">NoSQL (JSON)</span>
+            <span class="skill-badge">ER Diagram Design</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">HTML5 & CSS3</span>
+            <span class="skill-badge">Git & GitHub Pages</span>
         </div>
     </section>
 
-    <!-- 4. Projects Section (ใส่โปรเจกต์จริงจากในห้องเรียน 3 ชิ้น) -->
-    <section id="projects" class="container">
-        <h2>ผลงาน & โปรเจกต์ (Projects)</h2>
+    <!-- 4. Projects Section (เน้นโชว์รูปภาพผลงาน) -->
+    <section id="projects" class="container projects-section">
+        <div class="section-head">
+            <h2>ผลงาน & โปรเจกต์</h2>
+            <p>Featured Works & Case Studies</p>
+        </div>
+
         <div class="project-grid">
             
-            <!-- Project 1 -->
+            <!-- Project Card 1 -->
             <div class="project-card">
-                <div class="project-icon">🗄️</div>
-                <h3>1. Online Platform ER Diagram Design</h3>
-                <p>ออกแบบแบบจำลองโครงสร้างฐานข้อมูล (ER Diagram) คลี่คลายความสัมพันธ์แบบ M:N ให้เป็น 1:N พร้อมกำหนด Primary Key และ Foreign Key อย่างถูกต้อง</p>
-                <span class="tech-badge">Database Design</span>
+                <div class="project-img-wrapper">
+                    <!-- 🔴 ใส่รูปผลงานที่ 1 ชื่อไฟล์: images/project1.png -->
+                    <img src="images/project1.png" alt="ER Diagram Design">
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Database Design</div>
+                    <h3 class="project-title">Online Platform ER Diagram</h3>
+                    <p class="project-desc">ออกแบบแบบจำลองความสัมพันธ์ข้อมูล (ER Diagram) คลี่คลายความสัมพันธ์ N:M ให้เป็น 1:N พร้อมระบุ PK/FK ชัดเจน</p>
+                    <div class="project-tags">
+                        <span class="tag-mini">ERD</span>
+                        <span class="tag-mini">Normalization</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project Card 2 -->
             <div class="project-card">
-                <div class="project-icon">🔍</div>
-                <h3>2. CEO Car Selection (Data Detective Case #10)</h3>
-                <p>สืบค้นและวิเคราะห์ข้อมูลคัดเลือกรถผู้บริหารจากฐานข้อมูล SQLite ด้วย SQL Query ภายใต้เงื่อนไขงบประมาณและข้อกำหนดทางธุรกิจ</p>
-                <span class="tech-badge">SQL Query / Data Analysis</span>
+                <div class="project-img-wrapper">
+                    <!-- 🔴 ใส่รูปผลงานที่ 2 ชื่อไฟล์: images/project2.png -->
+                    <img src="images/project2.png" alt="CEO Car Selection SQL">
+                </div>
+                <div class="project-info">
+                    <div class="project-category">Data Analytics / SQL</div>
+                    <h3 class="project-title">CEO Car Selection Case #10</h3>
+                    <p class="project-desc">สืบค้นและคัดเลือกรถผู้บริหารจากฐานข้อมูล SQLite ด้วย SQL Query ภายใต้ข้อกำหนดและงบประมาณทางธุรกิจ</p>
+                    <div class="project-tags">
+                        <span class="tag-mini">SQLite</span>
+                        <span class="tag-mini">SQL Query</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Project 3 -->
+            <!-- Project Card 3 -->
             <div class="project-card">
-                <div class="project-icon">🛍️</div>
-                <h3>3. TechGear IT & Gaming Store (NoSQL & JSON)</h3>
-                <p>พัฒนาเว็บไซต์ร้านค้าออนไลน์ที่ดึงและแสดงผลข้อมูลสินค้าจากไฟล์ JSON Document และเปิดใช้งานผ่าน GitHub Pages</p>
-                <span class="tech-badge">NoSQL / JSON / GitHub Pages</span>
+                <div class="project-img-wrapper">
+                    <!-- 🔴 ใส่รูปผลงานที่ 3 ชื่อไฟล์: images/project3.png -->
+                    <img src="images/project3.png" alt="TechGear Store NoSQL">
+                </div>
+                <div class="project-info">
+                    <div class="project-category">NoSQL & Web Dev</div>
+                    <h3 class="project-title">TechGear IT Store & JSON</h3>
+                    <p class="project-desc">พัฒนาหน้าเว็บร้านค้าออนไลน์ดึงข้อมูลสินค้าแบบ NoSQL Document (JSON) และ Deploy ผ่าน GitHub Pages</p>
+                    <div class="project-tags">
+                        <span class="tag-mini">JSON</span>
+                        <span class="tag-mini">GitHub Pages</span>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -81,14 +131,15 @@
 
     <!-- 5. Contact Section -->
     <footer id="contact">
-        <h2>ช่องทางการติดต่อ (Contact)</h2>
-        <p>สามารถติดต่อหรือติดตามผลงานเพิ่มเติมได้ที่:</p>
-        <div class="social-links">
-            <a href="mailto:your.email@example.com">📧 Email</a>
-            <a href="[suspicious link removed]" target="_blank">💻 GitHub</a>
-            <a href="[suspicious link removed]" target="_blank">🔗 LinkedIn</a>
+        <div class="container footer-contact">
+            <h3>สนใจร่วมงานหรือสอบถามข้อมูล</h3>
+            <p>สามารถติดต่อหรือติดตามผลงานเพิ่มเติมได้ผ่านช่องทางด้านล่างนี้</p>
+            <div class="social-buttons">
+                <a href="mailto:your.email@example.com" class="social-btn">📧 Email Me</a>
+                <a href="[suspicious link removed]" target="_blank" class="social-btn">💻 GitHub Profile</a>
+            </div>
+            <p class="copyright">© 2026 Designed with Minimalist Style for IT234 Coursework.</p>
         </div>
-        <p class="copyright">© 2026 My Portfolio. Built with HTML & CSS for IT234.</p>
     </footer>
 
 </body>
